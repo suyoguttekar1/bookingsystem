@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  booklibrary.aspnetcore.ui:
+    image: booklibrary.aspnetcore.ui
+    build:
+      context: .
+      dockerfile: BookLibrary.aspnetcore.ui/Dockerfile
+
+  booklibrary.aspnetcore.api:
+    image: booklibrary.aspnetcore.api
+    build:
+      context: .
+      dockerfile: BookLibrary.aspnetcore.API/Dockerfile
